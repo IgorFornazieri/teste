@@ -11,14 +11,21 @@ export class EuroComponent implements OnInit {
 
   dolar:number = 5.67
   ress:any
+  resultado:any
   formatado:any
+  valor:any
   
   getEuro(event){
-    let valor = event.target.value
-    this.ress = this.dolar * valor
-    this.formatado = this.ress.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    this.valor = event.target.value
+    this.ress = this.dolar * this.valor
+    
   }
 
+  getReal(event){
+    this.valor = event.target.value
+    this.resultado = this.valor / this.dolar
+    this.resultado = this.resultado.toFixed(2)
+  }
 
 
 

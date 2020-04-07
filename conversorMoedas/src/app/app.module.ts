@@ -10,6 +10,7 @@ import { DolarAustralianoComponent } from './dolar-australiano/dolar-australiano
 import { DolarCanadenseComponent } from './dolar-canadense/dolar-canadense.component';
 import { IndexComponent } from './index/index.component';
 import { DolarComponent } from './dolar/dolar.component';
+import { BackgroundDirective } from './background.directive';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { DolarComponent } from './dolar/dolar.component';
     IndexComponent,
     DolarComponent,
     RoutingComponent,
+    BackgroundDirective,
   ],
   imports: [
     BrowserModule,

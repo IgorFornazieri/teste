@@ -19,9 +19,7 @@ export class DolarComponent implements OnInit {
     this.ress = this.dolar * valor
     this.formatado = this.ress.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
   }
-
-
-
+  
   ngOnInit(): void {
   }
 

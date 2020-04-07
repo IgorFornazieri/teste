@@ -1,5 +1,6 @@
 body{
-    background-image: url("../../../imagens/euro.jpg");
+    /* background-image: url("../../../imagens/euro.jpg"); */
+    background-color: brown;
 }
 
 input{
