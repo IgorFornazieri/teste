@@ -8,13 +8,13 @@ input{
     text-align: justify;
 }
 
-.img{
+/* .img{
     background-image: url('../../../imagens/br.png');
     background-size: 100%;
     width: 30px;
     height: 30px;
     display: inline-block;
-}
+} */
 
 button{
     padding: 8px;
@@ -46,15 +46,3 @@ p{
     width: 300px;
     margin-left: 220px;
 }
-
-/* #coin{
-    background-color: lightgreen;
-    width: 136px;
-    
-}
-
-#value{
-    background-color: lightpink;
-    width: 136px;
-    margin-left: 400px;
-} */
