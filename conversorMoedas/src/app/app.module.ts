@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+// import { HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule, RoutingComponent} from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -11,6 +11,7 @@ import { DolarCanadenseComponent } from './dolar-canadense/dolar-canadense.compo
 import { IndexComponent } from './index/index.component';
 import { DolarComponent } from './dolar/dolar.component';
 import { BackgroundDirective } from './background.directive';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -23,10 +24,13 @@ import { BackgroundDirective } from './background.directive';
     DolarComponent,
     RoutingComponent,
     BackgroundDirective,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule,
+    AppRoutingModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

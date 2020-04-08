@@ -15,30 +15,26 @@
 }
 
 .dolar{
-    background-image: url("../../../imagens/eua.png");
+    background-image: url("../../assets/imagens/eua.png");
     background-size: 100%;
 }
 
 .australia{
-    background-image: url("../../../imagens/australia.png");
+    background-image: url("../../assets/imagens/australia.png");
     background-size: 100%;
 }
 
 .canada{
-    background-image: url("../../../imagens/canada.png");
+    background-image: url("../../assets/imagens/canada.png");
     background-size: 100%;
 }
 
 .euro{
-    background-image: url("../../../imagens/mundo.png");
+    background-image: url("../../assets/imagens/mundo.png");
     background-size: 100%;
 }
 
-
-
-
-
 .libra{
-    background-image: url("../../../imagens/bandeira.png");
+    background-image: url("../../assets/imagens/bandeira.png");
     background-size: 100%;
 }
