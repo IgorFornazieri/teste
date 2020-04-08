@@ -33,7 +33,7 @@ p{
 }
 
 .main{
-    background-color: rgba(204, 204, 204, 0.692);
+    
     margin-top: 60px;
     padding-bottom: 20px;
     
@@ -42,7 +42,7 @@ p{
 .style{
     font-size: 26px;
     color: black;
-    background-color: gold;
-    width: 430px;
-    margin-left: 150px;
+    font-weight: bolder;
+    width: 450px;
+    margin-left: 140px;
 }

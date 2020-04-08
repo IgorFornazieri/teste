@@ -1,8 +1,8 @@
 <div class="main">
     <!-- <p id="coin">Moeda escolhida</p><p id="value">Valor convertido</p> -->
     <p class="style">Converter Euro em Real</p>
-    <span class="img"></span><input type="text" placeholder="Euro" value="{{resultado}}" (keyup) = "getEuro($event)" id="dolar" autofocus>
-    <button class="btn-trade">PARA</button>
-    <input type="text" placeholder="Real" (keyup) = "getReal($event)" value="{{ress}}" id="real">
+    <span class="img"></span><input type="text" placeholder="Euro" value="{{resultado | currency:'BRL'}}" (keyup) = "getEuro($event)" id="dolar" autofocus>
+    <button class="btn-trade">← →</button>
+    <input type="text" placeholder="Real" (keyup) = "getReal($event)" value="{{ress | currency:'EUR'}}" id="real">
 </div>
 

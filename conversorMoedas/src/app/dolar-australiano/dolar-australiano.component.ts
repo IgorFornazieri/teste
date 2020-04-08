@@ -13,11 +13,19 @@ export class DolarAustralianoComponent implements OnInit {
   }
   dolar:number = 3.23
   ress:any
+  resultado:any
   formatado:any
+  valor:any
 
   getDolarAus(event){
     let valor = event.target.value
     this.ress = this.dolar * valor
-    this.formatado = this.ress.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    
 }
+
+getReal(event){
+  this.valor = event.target.value
+  this.resultado = this.valor / this.dolar
+  }
+
 }

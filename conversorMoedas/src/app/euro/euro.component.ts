@@ -24,8 +24,7 @@ export class EuroComponent implements OnInit {
   getReal(event){
     this.valor = event.target.value
     this.resultado = this.valor / this.dolar
-    this.resultado = this.resultado.toFixed(2)
-  }
+    }
 
 
 

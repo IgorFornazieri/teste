@@ -1,7 +1,7 @@
 <div class="main">
     <!-- <p id="coin">Moeda escolhida</p><p id="value">Valor convertido</p> -->
     <p class="style">Converter Dólar Australiano em Real</p>
-    <span class="img"></span><input type="text" placeholder="Dólar Australiano" (keyup) = "getDolarAus($event)" id="dolar" autofocus>
-    <button class="btn-trade">PARA</button>
-    <input type="text" placeholder="Real" value="{{formatado}}" id="real">
+    <span class="img"></span><input type="text" placeholder="Dólar Australiano" value="{{resultado | currency:'BRL'}}" (keyup) = "getDolarAus($event)" id="dolar" autofocus>
+    <button class="btn-trade">← →</button>
+    <input type="text" placeholder="Real" (keyup) = "getReal($event)" value="{{ress | currency:'AUD'}}" id="real">
 </div>

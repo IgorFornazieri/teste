@@ -11,7 +11,9 @@ export class DolarCanadenseComponent implements OnInit {
 
   dolar:number = 3.72
   ress:any
+  resultado:any
   formatado:any
+  valor:any
   
   getDolarCnd(event){
     let valor = event.target.value
@@ -19,6 +21,11 @@ export class DolarCanadenseComponent implements OnInit {
     this.formatado = this.ress.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
   }
   
+  getReal(event){
+    this.valor = event.target.value
+    this.resultado = this.valor / this.dolar
+    }
+
   ngOnInit(): void {
   }
 

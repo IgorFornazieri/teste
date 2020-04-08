@@ -12,7 +12,9 @@ export class DolarComponent implements OnInit {
 
   dolar:number = 5.21
   ress:any
+  resultado:any
   formatado:any
+  valor:any
 
   getDolar(event){
     let valor = event.target.value
@@ -20,6 +22,12 @@ export class DolarComponent implements OnInit {
     this.formatado = this.ress.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
   }
   
+  getReal(event){
+    this.valor = event.target.value
+    this.resultado = this.valor / this.dolar
+    }
+
+
   ngOnInit(): void {
   }
 
