@@ -13,6 +13,7 @@ export class DolarComponent implements OnInit {
   resultado:any
   formatado:any
   valor:any
+  
 
    constructor(private currency: ConversorService) { }
 

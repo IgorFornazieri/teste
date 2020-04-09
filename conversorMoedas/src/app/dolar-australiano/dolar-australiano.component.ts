@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConversorService } from '../conversor.service';
 
 @Component({
   selector: 'app-dolar-australiano',
@@ -7,15 +8,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DolarAustralianoComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-  dolar:number = 3.23
+  dolar:any
   ress:any
   resultado:any
   formatado:any
   valor:any
+  
+
+   constructor(private currency: ConversorService) { }
+
+    getCurrency(main){
+      this.currency.getValue(main).subscribe((data) =>{
+        let coin = new Object(data)
+        this.dolar = coin.rates.BRL
+        console.log(coin.rates.BRL)
+      })
+        
+      
+    }
+
+    ngOnInit():void {
+      this.getCurrency("AUD")
+    }
 
   getDolarAus(event){
     let valor = event.target.value
