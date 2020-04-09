@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConversorService } from '../conversor.service';
 
 @Component({
   selector: 'app-euro',
@@ -7,13 +8,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EuroComponent implements OnInit {
 
-  constructor() { }
-
-  dolar:number = 5.67
+  dolar:any
   ress:any
   resultado:any
   formatado:any
   valor:any
+  
+
+   constructor(private currency: ConversorService) { }
+
+    getCurrency(main){
+      this.currency.getValue(main).subscribe((data) =>{
+        let coin = new Object(data)
+        this.dolar = coin.rates.BRL
+        console.log(coin.rates.BRL)
+      })
+        
+      
+    }
+
+    ngOnInit():void {
+      this.getCurrency("EUR")
+    }
   
   getEuro(event){
     this.valor = event.target.value
@@ -26,9 +42,5 @@ export class EuroComponent implements OnInit {
     this.resultado = this.valor / this.dolar
     }
 
-
-
-  ngOnInit(): void {
-  }
 
 }
