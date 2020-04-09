@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConversorService } from '../conversor.service';
 
 @Component({
   selector: 'app-libra',
@@ -24,6 +25,7 @@ export class LibraComponent implements OnInit {
   getReal(event){
     this.valor = event.target.value
     this.resultado = this.valor / this.dolar
+    
     }
 
   ngOnInit(): void {
