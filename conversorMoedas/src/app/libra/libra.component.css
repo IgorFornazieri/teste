@@ -16,12 +16,13 @@ input{
     display: inline-block;
 } */
 
-button{
+span{
     padding: 8px;
-    background-color: rgb(100, 15, 100);
+    background-color: rgb(83, 148, 63);
     font-size: 18px;
     color: white;
-    border: 3px solid black;
+    border: 3px solid rgb(188, 206, 197);
+    border-radius: 30px;
 }
 
 ::placeholder{

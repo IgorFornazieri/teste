@@ -13,15 +13,16 @@ export class EuroComponent implements OnInit {
   resultado:any
   formatado:any
   valor:any
+  coin:any
   
 
    constructor(private currency: ConversorService) { }
 
     getCurrency(main){
       this.currency.getValue(main).subscribe((data) =>{
-        let coin = new Object(data)
-        this.dolar = coin.rates.BRL
-        console.log(coin.rates.BRL)
+         this.coin = new Object(data)
+        this.dolar = this.coin.rates.BRL
+        console.log(this.coin.rates.BRL)
       })
         
       
