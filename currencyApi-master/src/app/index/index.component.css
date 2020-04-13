@@ -1,0 +1,79 @@
+#menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#menu ul li {
+    display: inline;
+}
+
+#menu ul li a {
+    display: inline-block;
+    padding: 50px;
+    margin-right: 30px;
+}
+
+p {
+    color: rgb(253, 253, 253);
+    display: inline-block;
+    padding: 5px;
+    background-color: rgb(0, 0, 0);
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 30px;
+}
+
+
+.fst{
+    margin-left: 25px;
+}
+
+.scn{
+    margin-left: 80px;
+}
+
+.thr{
+    margin-left: 65px;
+}
+
+.fht{
+    margin-left: 75px;
+}
+
+.fft{
+    margin-left: 80px;
+}
+
+.dolar{
+    background-image: url("../../assets/imagens/eua.png");
+    background-size: 100%;
+}
+
+.australia{
+    background-image: url("../../assets/imagens/australia.png");
+    background-size: 100%;
+}
+
+.canada{
+    background-image: url("../../assets/imagens/canada.png");
+    background-size: 100%;
+}
+
+.euro{
+    background-image: url("../../assets/imagens/mundo.png");
+    background-size: 100%;
+}
+
+.libra{
+    background-image: url("../../assets/imagens/bandeira.png");
+    background-size: 100%;
+}
+
+/* .example-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+} */
+  
