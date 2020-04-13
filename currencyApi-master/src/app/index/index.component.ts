@@ -26,7 +26,7 @@ export class IndexComponent implements OnInit {
 
     getCurrency(main){
       this.currency.getValue(main).subscribe((data) =>{
-         this.coin = new Object(data)
+        this.coin = new Object(data)
         this.dolar = this.coin.rates.BRL
         console.log(this.coin.rates.BRL)
       })
